@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FARTHOME</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-family: monospace;
+      padding: 30px;
+      text-align: center;
+    }
+    .logo {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: red;
+      color: black;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .terminal {
+      border: 2px solid red;
+      padding: 20px;
+      margin-top: 30px;
+      white-space: pre-wrap;
+      background-color: #111;
+    }
+    .fart-animation {
+      margin-top: 40px;
+      font-size: 2em;
+      animation: fartBlast 2s infinite alternate;
+    }
+    @keyframes fartBlast {
+      0% { transform: translateX(-20px); }
+      100% { transform: translateX(20px); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="farthome-logo.png" alt="Farthome Logo" class="logo" />
+
+  <div class="terminal">
+    > ./run_farthome.exe<br>
+    Welcome to FARTHOME – where homies fart together 🍑💨<br><br>
+    Launching soon on Pump.fun<br><br>
+    X: <a href="https://x.com/farthometoken" target="_blank" style="color: red;">@farthometoken</a>
+  </div>
+
+  <div class="fart-animation">
+    🤜💨      💨🤛<br/>
+    <small>(homies farting...)</small>
+  </div>
+
+  <a class="btn" href="#">Buy on Pump.fun</a>
+  <a class="btn" href="#">View Chart</a>
+
+  <audio id="fartSound" src="fart.mp3"></audio>
+  <script>
+    document.body.addEventListener("click", () => {
+      document.getElementById("fartSound").play();
+    });
+  </script>
+
+</body>
+</html>
